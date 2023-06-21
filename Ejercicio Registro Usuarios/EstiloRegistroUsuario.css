@@ -1,0 +1,68 @@
+body 
+{
+   background: url(IMAGENES/software.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   color: white; 
+   padding-top: 10%;
+   font-family: sans-serif;
+}
+
+form 
+{
+  width: 500px;
+  margin: auto;
+  border-radius: 1em;
+  background-color: white;
+  opacity: .9;
+  padding: 25px;
+  margin-top: 20px; 
+  color: white;
+  border: 1px solid black;
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: black;  
+}
+
+
+label,input,select
+{
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+    color: black;
+    border-radius: 1em;
+    font-weight: 600;
+}
+
+input, select
+{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]
+{
+    width: 45%;
+    background-color: rgb(48, 138, 9);
+    color: white;
+    font-size: 170%;
+    margin-left: 28%;
+    border-radius: 5em;
+}
+
+a 
+{
+    color: rgb(226, 15, 15);
+    font-size: 130%;
+    margin-top: 10%;
+    border-radius: 5em;
+    text-decoration: none;
+}

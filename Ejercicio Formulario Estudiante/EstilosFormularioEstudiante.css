@@ -1,0 +1,64 @@
+body 
+{
+   background: url(IMAGENES/biblioteca.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   color: white; 
+   padding-top: 5%;
+   font-family: sans-serif;
+}
+
+form 
+{
+  width: 500px;
+  margin: auto;
+  border-radius: 1em;
+  background-color: white;
+  opacity: .8;
+  padding: 25px;
+  margin-top: 20px; 
+  color: white;
+  border: 1px solid black;
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: black;
+}
+
+label,input,select
+{
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+    color: black;
+    border-radius: 1em;
+}
+
+input, select
+{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]
+{
+    width: 35%;
+    background-color: rgb(73, 9, 138);
+    color: white;
+    font-size: 130%;
+    margin-left: 35%;
+    border-radius: 5em;
+}

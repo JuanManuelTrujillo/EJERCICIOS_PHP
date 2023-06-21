@@ -1,0 +1,20 @@
+*
+{
+    background-color: rgb(133, 191, 203);
+    padding: 50px;
+}
+
+body 
+{
+   background: #fff; 
+   color: white; 
+   font-family: sans-serif;
+}
+
+form 
+{
+  width: 500px; margin: auto;
+  background: #ddd; padding: 20px;
+  margin-top: 20px; color: black;
+  border: 1px solid black;
+}

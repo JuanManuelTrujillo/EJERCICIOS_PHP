@@ -1,0 +1,60 @@
+body 
+{
+   background: url(IMAGENES/hamburguesapan.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-weight: 100;
+   width: 100%;
+   height: 100%;
+   color: white; 
+   padding-top: 11%;
+   font-family: sans-serif;
+}
+
+form 
+{
+  width: 500px;
+  margin: auto;
+  border-radius: 1em;
+  background-color: white;
+  opacity: .9;
+  padding: 20px;
+  margin-top: 20px; 
+  color: black;
+  border: 1px solid black;
+}
+
+h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+label,input,select
+{
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: black;
+    border-radius: 1em;
+}
+
+input, select
+{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"]
+{
+    width: 35%;
+    background-color: rgb(236, 119, 9);
+    color: white;
+    font-size: 130%;
+    margin-left: 35%;
+    border-radius: 5em;
+}
