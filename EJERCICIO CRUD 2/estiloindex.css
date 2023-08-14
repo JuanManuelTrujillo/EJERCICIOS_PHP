@@ -1,0 +1,68 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 15px;   
+margin: 45px;  
+width: 480px; text-align: left;    
+border-collapse: collapse; 
+margin-left: 25%;
+}
+
+th{
+background: rgb(0, 140, 255);
+font-size: 16px;     
+font-weight: normal;     
+padding: 8px;     
+color: white;
+}
+
+td{    
+padding: 8px;     
+border-bottom: 1px solid #fff;
+color: black;    
+border-bottom: 1px solid #000; 
+}
+
+tr:hover td { 
+background: #9ccff4; 
+color: black; 
+}
+
+h1{
+text-align: center;
+color:white
+}
+
+.crear{
+background: green;
+border-radius: 5px;
+height: 30px;
+font-size: medium;;
+margin-left: 25%;
+margin-top: 5%;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+.cabecera{
+ background:  rgb(0, 140, 255);
+}
+
+.Actualizar{
+background: blue;
+border-radius: 5px;
+border-color: blue;
+margin-bottom: 5px;
+}
+
+.eliminar{
+background: red;
+border-radius: 5px;
+border-color: red;
+}
