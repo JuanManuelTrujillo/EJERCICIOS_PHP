@@ -26,7 +26,7 @@
 
       <form action="conexion_registro.php" method="POST">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" id="nombre"  placeholder="Nombre completo" required>
+          <input type="text" class="form-control" id="nombre" name="nombre"  placeholder="Nombre completo" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" id="correo"  placeholder="Correo Electrónico" required>
+          <input type="email" class="form-control" id="correo" name="correo"  placeholder="Correo Electrónico" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" id="contraseña"  placeholder="Contraseña" required>
+          <input type="text" class="form-control" id="telefono" name="telefono"  placeholder="Teléfono" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -50,7 +50,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" id="contraseña"  placeholder="Confirmar contraseña" required>
+          <input type="password" class="form-control" id="contraseña" name="contraseña"   placeholder="Contraseña" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>

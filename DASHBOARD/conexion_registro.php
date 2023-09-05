@@ -15,6 +15,7 @@ if ($conn->connect_error ) {
 if ($_SERVER["REQUEST_METHOD"] == "POST"){ 
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
+$telefono = $_POST["telefono"];
 $contraseña = $_POST["contraseña"];
 
 // Verificar si el usuario ya existe en la base de datos
@@ -26,7 +27,7 @@ echo "El correo ya se encuentra registrado. Por favor, elige otro correo electr�
 } else {
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO registro_usuarios (nombre, correo, contraseña) VALUES ('$nombre', '$correo', '$contraseña')";
+$sql = "INSERT INTO registro_usuarios (nombre, correo, telefono, contraseña) VALUES ('$nombre', '$correo', '$telefono', '$contraseña', NOW())";
 
 if ($conn->query($sql) === TRUE) {
 // Redireccionar a la página de inicio de sesión
