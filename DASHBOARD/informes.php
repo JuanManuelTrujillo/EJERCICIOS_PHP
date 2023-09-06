@@ -106,7 +106,7 @@
           </a>
         
           <div class="dropdown-divider"></div>
-          <a href="index.php" class="dropdown-item">
+          <a href="cerrar_sesion.php" class="dropdown-item">
             <i class="fa-solid fa-circle-xmark"></i> Cerrar Sesión
             <span class="float-right text-muted text-sm"></span>
           </a>

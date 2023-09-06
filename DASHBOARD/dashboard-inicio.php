@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: index.php");
+    exit();
+}
+
+// Aquí puedes mostrar el contenido de la página de inicio para usuarios autenticados
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -106,7 +116,7 @@
           </a>
       
           <div class="dropdown-divider"></div>
-          <a href="index.php" class="dropdown-item">
+          <a href="cerrar_sesion.php" class="dropdown-item">
             <i class="fa-solid fa-circle-xmark"></i> Cerrar Sesión
             <span class="float-right text-muted text-sm"></span>
           </a>

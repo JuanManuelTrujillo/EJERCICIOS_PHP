@@ -42,14 +42,6 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="text" class="form-control" id="telefono" name="telefono"  placeholder="Teléfono" required>
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
           <input type="password" class="form-control" id="contraseña" name="contraseña"   placeholder="Contraseña" required>
           <div class="input-group-append">
             <div class="input-group-text">
@@ -60,7 +52,7 @@
         <div class="row">
           <div class="col-12">
             <div class="icheck-primary">
-              <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+              <input type="checkbox" id="agreeTerms" name="acepta_terminos" value="agree" required>
               <label for="agreeTerms">
                Acepto<a href="#"> terminos y condiciones</a>
               </label>

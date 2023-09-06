@@ -1,8 +1,8 @@
 <?php
 // Conexión a la base de datos
-$servername = "localhost:3306"; 
-$username = "root"; 
-$password = "root"; 
+$servername = "127.0.0.1:3308";
+$username = "root";
+$password = "";
 $dbname = "dashboard_juan"; 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -15,8 +15,9 @@ if ($conn->connect_error ) {
 if ($_SERVER["REQUEST_METHOD"] == "POST"){ 
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
-$telefono = $_POST["telefono"];
 $contraseña = $_POST["contraseña"];
+$acepta_terminos = isset($_POST['acepta_terminos']) ? 1 : 0; // 1 si está marcado, 0 si no
+
 
 // Verificar si el usuario ya existe en la base de datos
 $sql = "SELECT id FROM registro_usuarios WHERE correo = '$correo'";
@@ -27,7 +28,7 @@ echo "El correo ya se encuentra registrado. Por favor, elige otro correo electr�
 } else {
 
 // Insertar datos en la base de datos
-$sql = "INSERT INTO registro_usuarios (nombre, correo, telefono, contraseña) VALUES ('$nombre', '$correo', '$telefono', '$contraseña', NOW())";
+$sql = "INSERT INTO registro_usuarios (nombre, correo, contraseña, acepta_terminos) VALUES ('$nombre', '$correo', '$contraseña', '$acepta_terminos')";
 
 if ($conn->query($sql) === TRUE) {
 // Redireccionar a la página de inicio de sesión
