@@ -1,8 +1,9 @@
 <?php
+// Conexión a la base de datos
 $servername = "127.0.0.1:3308";
 $username = "root";
 $password = "";
-$dbname = "universidad_del_sur"; 
+$dbname = "ecommerce";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -10,5 +11,3 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
 	die("Conexión fallida: " . $conn->connect_error);
 }
-?>
-

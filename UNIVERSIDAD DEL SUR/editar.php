@@ -21,24 +21,24 @@
             $row = $resultado->fetch_assoc();
         ?>
 
-        <input type="Hidden" class="form-control" name="Id" value="<?php echo $row['id']; ?>">
+        <input type="Hidden" class="form-control" name="id" value="<?php echo $row['id'];?>">
 
         <div class="mb-3">
             <label class="form-label">Nombre Estudiante</label>
-            <input type="text" class="form-control" name="Precio" value="<?php echo $row['nombre_estudiante']; ?>">
+            <input type="text" class="form-control" name="nombre" value="<?php echo $row['nombre_estudiante'];?>">
         </div>
         <div class="mb-3">
             <label class="form-label">Edad</label>
-            <input type="text" class="form-control" name="Descripcion" value="<?php echo $row['edad']; ?>">
+            <input type="text" class="form-control" name="edad" value="<?php echo $row['edad']; ?>">
         </div>
         <div class="mb-3">
             <label class="form-label">Correo Electrónico</label>
-            <input type="text" class="form-control" name="Precio" value="<?php echo $row['correo_estudiante']; ?>">
+            <input type="text" class="form-control" name="correo_estudiante" value="<?php echo $row['correo_estudiante'];?>">
         </div>
 
         <!--TRAER DATOS CATEGORIAS-->
         <label>Programa</label>
-        <select class="form-select mb-3" aria-label="Default select example" name="Marcas">
+        <select class="form-select mb-3" aria-label="Default select example" name="programa">
             <option selected disabled>--Seleccione marcas--</option>
             <?php
                include 'Conexion.php';
@@ -59,7 +59,7 @@
             ?>   
         </select>
         <label>Docentes</label>
-        <select class="form-select mb-3" aria-label="Default select example" name="Categorias">
+        <select class="form-select mb-3" aria-label="Default select example" name="docente">
             <option selected disabled>--Seleccione Categorias--</option>
             <?php
                include 'Conexion.php';

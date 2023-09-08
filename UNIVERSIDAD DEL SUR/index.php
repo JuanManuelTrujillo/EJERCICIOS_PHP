@@ -42,6 +42,8 @@
                 <?php
                 include 'conexion.php';
 
+              
+
                 $sql = $conn->query("SELECT * FROM estudiantes
                      INNER JOIN programa_matriculado ON estudiantes.id_programa = programa_matriculado.id_programa
                      INNER JOIN docentes ON estudiantes.id_docente = docentes.id_docente
@@ -62,7 +64,7 @@
                        
                         <th>
                             <a href="editar.php?id=<?php echo $resultado['id']?>" class="btn btn-warning">Editar</a>
-                            <a href="EliminarDatos.php?Id=<?php echo $resultado['IdProducto']?>" class="btn btn-danger" onclick="return confirmacion()">Eliminar</a>
+                            <a href="eliminar.php?id=<?php echo $resultado['id']?>" class="btn btn-danger" onclick="return confirmacion()">Eliminar</a>
                         </th>
                     </tr>
 
@@ -73,7 +75,7 @@
 
             </tbody>
         </table>
-        <div class="container">
+        <div class="container"> 
             <a href="agregar.php" class="btn btn-success">Agregar Producto</a>
         </div>
     </div>
