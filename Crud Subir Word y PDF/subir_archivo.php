@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['archivo'])) {
     <div class="container">
     <h1>Subir Archivo</h1>
     <form action="subir_archivo.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="archivo" accept=".pdf, .doc, .docx, .png, .jpeg">
+        <input type="file" name="archivo" accept=".pdf, .doc, .docx, .xlsx, .png, .jpg">
         <button type="submit" class="btn btn-success">Subir</button>
     </form>
     <br>

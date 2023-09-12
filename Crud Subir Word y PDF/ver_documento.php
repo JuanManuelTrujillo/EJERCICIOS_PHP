@@ -22,10 +22,15 @@
             echo '<h2>' . $archivo['nombre'] . '</h2>';
             echo '<p>Tipo: ' . $archivo['tipo'] . '</p>';
             
+            // Verificar el tipo de archivo y configurar la visualización adecuada
             if (strpos($archivo['tipo'], 'pdf') !== false) {
-                echo '<embed src="data:application/pdf;base64,' . base64_encode($archivo['contenido']) . '" width="1000" height="600" />';
+                echo '<iframe src="data:application/pdf;base64,' . base64_encode($archivo['contenido']) . '" width="1200" height="600"></iframe>';
             } elseif (strpos($archivo['tipo'], 'word') !== false) {
                 echo '<iframe src="data:application/msword;base64,' . base64_encode($archivo['contenido']) . '" width="800" height="600"></iframe>';
+            } elseif (strpos($archivo['tipo'], 'excel') !== false) {
+                echo '<iframe src="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,' . base64_encode($archivo['contenido']) . '" width="800" height="600"></iframe>';
+            } elseif (strpos($archivo['tipo'], 'powerpoint') !== false) {
+                echo '<iframe src="data:application/vnd.openxmlformats-officedocument.presentationml.presentation;base64,' . base64_encode($archivo['contenido']) . '" width="800" height="600"></iframe>';
             } 
             // Verificar si es una imagen (JPEG, PNG, GIF)
             elseif (strpos($archivo['tipo'], 'image') !== false) {
@@ -42,6 +47,5 @@
     <br>
     <br>
     <a href="index.php" class="btn btn-danger">Volver a la lista de archivos</a>
-    </div>
 </body>
 </html>
