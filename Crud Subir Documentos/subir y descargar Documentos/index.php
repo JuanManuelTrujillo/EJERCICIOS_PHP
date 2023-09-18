@@ -28,7 +28,7 @@
     <br>
     <div class="container">
         <div class="col-sm-12">
-            <h2 style="text-align: center;">Subir Archivos PDF</h2>
+            <h2 style="text-align: center;">Subir Archivos PDF y DOCS</h2>
             <br>
             <div>
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#agregar"> Agregar </button>
